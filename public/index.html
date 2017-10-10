@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="xenditApp">
+<head>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<style> body { padding-top:100px; } </style>
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<script src="core.js"></script>
+
+</head>
+<body ng-controller="mainController">
+	<div class="container">
+		<div class="col-sm-8 col-sm-offset-2 text-center">
+			<form>
+				<input type="text" ng-model="formData.user_id">
+				<button type="submit" ng-click="sendIt()">Search</button>
+			</form>
+			<br>
+			<textarea rows="4" cols="50">
+				{{result}}
+			</textarea>
+		</div>
+	</div>
+</body>
+</html>
